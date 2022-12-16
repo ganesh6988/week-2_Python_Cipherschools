@@ -1,0 +1,29 @@
+#Functions
+a=3
+b=7
+print(a+b)
+print("waiting")
+print("waiting")
+print("waiting")
+
+print(a-b)
+print("waiting")
+print("waiting")
+print("waiting")
+
+print(a*b)
+print("waiting")
+print("waiting")
+print("waiting")
+
+def show_waiting():
+    for _ in range(3):
+        print(_)
+        print("waiting...")
+show_waiting()
+
+def sheldon_knock(name,times=3):
+    for _ in range(times):
+        print("knock knock knock",name)
+sheldon_knock(name,times=3)
+        
