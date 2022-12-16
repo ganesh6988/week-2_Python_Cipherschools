@@ -1,0 +1,23 @@
+#string formatting or string interpolation
+a=5
+print("value of a is %d",a)
+print("value of a is {}".format(a))
+
+a,b,c,d=1,2,3,4
+print("a={2},b={1},c={0}".format(c,b,a))
+
+name="john"
+company="shuttl"
+print("name={name} company={company}".format(name=name,company=company))
+print(f"name={name}")
+print("Hello {name} welcome to my {company}".format(name=name,company=company))
+print(f"name={name}")
+print(len("a\nb"))
+for c in r"a\nb":
+    print(c)
+    
+    
+print("   john   ".split(","))
+print("1,2,3,4".split(','))
+print("john".replace("o","a"))
+print("john josh".count("j"))
