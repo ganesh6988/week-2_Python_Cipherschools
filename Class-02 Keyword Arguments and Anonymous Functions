@@ -1,0 +1,63 @@
+#keyword Arguments
+ 
+
+def hello():
+    print("hello world")
+   
+    return 1
+a=1 
+a=hello 
+a()
+hello=2
+print(hello)
+
+#def func(a, b, c):
+ #   print(a, b, c)
+    
+
+
+#Arguments in other languages
+#-Required arguments func(a)
+#-Default arguments func(b=1)
+
+#Arguments in python
+#-required Arguments
+#-Optional Arguments
+#-Default Arguments
+#-Required keyworded only Arguments
+#-Default keyworded only Arguments
+#-Optional keyworded only Arguments
+
+#-required Arguments
+def func(a=1,b=2):
+    print(a,b)
+func(1,3)
+
+def func(*a):
+    print(a)
+func(1,2,3,"john")
+
+def func(a,b,*c,d):
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+func(1,2,3,4,d=5)
+
+#-Default Arguments
+
+def func(a,b,*c,d,e="john"):
+    print(a)
+    print(b)
+    print(c)
+    print(d)
+    print(e)
+func(1,2,3,4,d="something",e="asdf")
+
+def func(**k):
+    print(k)
+func(name="john")
+
+#Anonymous function or lambda function
+
+lambda a, b:a + b
