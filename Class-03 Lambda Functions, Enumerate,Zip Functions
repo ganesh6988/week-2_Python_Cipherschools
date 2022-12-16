@@ -1,0 +1,51 @@
+#lambda Expressions
+lambda a,b:a+b 
+a=["john","jatin","ravi"]
+for name in enumerate(a):
+    print(name)
+   
+    
+a=4
+b=6
+temp=a 
+a=b 
+b=temp 
+print(a,b)
+
+a=6
+b=5
+a=a*b 
+b=a*b 
+a=a*b 
+print(a,b)
+
+#packing and unpacking values
+a=2
+b=4
+a,b=b,a
+print(a,b)
+
+a=[1,2]
+b,c=a 
+print(b,c)
+
+a=1,2
+print(type(a))
+
+a=["john","jatin","ravi"]
+for i,name in enumerate(a):
+    print(i,"-",name)
+    
+#zip
+names=["john","jatin","ravi"]
+scores=[50,60,70]
+for i,name in enumerate(names):
+    score=scores[i]
+    print(name,"-",score)
+
+names=["john","jatin","ravi"]
+scores=[50,60,70]
+states=["delhi","punjab","punjab"]
+for name,score,state in zip(names,scores,states):
+    
+    print(name,"-",score,state)
