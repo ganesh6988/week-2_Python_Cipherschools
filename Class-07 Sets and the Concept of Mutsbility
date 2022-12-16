@@ -1,0 +1,40 @@
+#Lists ==>ordered and can be indexed using positions
+#Dicts ==>unordered and can be induced using keys
+#Sets==>unordered and cannot be indexed
+
+a={1,2,3,4}
+print(type(a))
+for i in a:
+    print(i)
+ 
+#a=b
+#a=(1, 2) 
+#print(a.union(b))
+#print(a.intersection(b))
+#print(a.add(1))
+#print(a.remove(4))
+#print(a)
+ 
+a=[[""] * 3] * 3
+print(a[1][1])
+print(a)
+print([['','x',''],['','x',''],['','x','']])
+ 
+a=[1,2,3,4,5,6,7]
+print(id(a))
+   
+
+class student:
+    name = 'jatin'
+    marks = 50
+print()
+
+a=255
+b=255
+print(a == b)
+print(a is b)
+
+
+#"jatin"==> "dfghjkjhgfdx" ==>"jatin"
+#"jatin"==> "er98oiuhgvbjkjh"
+#"jatin"==> "er89oiuhgvbjkjh"
