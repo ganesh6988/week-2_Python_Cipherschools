@@ -1,0 +1,47 @@
+#Tuples
+a=[1,2,3]
+a[0]=100
+a[2]=200
+print(a)
+
+a=(1,2,3,4)
+print(type(a))
+
+def func(*args):
+    print(type(args))
+func(1,2,3,4)
+
+def sum_diff(a,b):
+    c=a+b 
+    d=a-b 
+    return c,d
+c=sum_diff(10,5)
+print(c)
+
+a=(1,2,3,4,5)
+a=[1,2,3,4,5]
+print(a.append(3))
+print(a.append(7))
+
+#dictionaries
+#a=dict()
+
+#a[1]
+#a[(1,2)]
+
+a={
+    "name":"jatin",
+    "company":"shuttl",
+    "college":"LPU"
+}
+key="marks"
+if key in a:
+    print(a[key])
+else:
+    print("key doesn't exist")
+print(a.get(key,"key doesn't exist"))
+
+#a.values()
+#x dict_values(["jatin","shuttl","lpu"])
+for key,value in a.item():
+    print(key,"->",value)
